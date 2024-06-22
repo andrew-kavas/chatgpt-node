@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+# copy constants.py
+if [[ ! -e .env ]]; then
+  cp .env.example .env
+fi
+
+# install deps
+npm install
